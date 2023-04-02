@@ -1,0 +1,31 @@
+@media (min-width: 999px) {
+  .header2menuIcon {
+    display: none !important;
+  }
+
+}
+@media (max-width: 999px) {
+  .header2menuIcon2 svg {
+    display: block !important;
+    font-size: 30px;
+    position: absolute !important;
+    top: -110px !important;
+
+  }
+
+  .header2Menuname{
+    display: none !important;
+  }
+  .header2MenunameMobileR{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    height: 300px !important;
+    margin-top: 20px;
+  }
+
+
+}
+
+/* header2Menuname */
