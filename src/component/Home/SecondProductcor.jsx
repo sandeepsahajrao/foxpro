@@ -129,7 +129,7 @@ export const SecondProductcor = () => {
                   alt={`Banner ${index + 1}`}
                 />
                 <Box
-                className="secProductName"
+                  className='secProductName'
                   sx={{
                     width: "100%",
                     display: "flex",
@@ -137,8 +137,16 @@ export const SecondProductcor = () => {
                     marginTop: "10px",
                   }}
                 >
-                  <Typography sx={{paddingLeft:'10px'}}>Product Name</Typography>
-                  <Typography sx={{ fontWeight: "bold", fontSize: "1.3rem",paddingLeft:'10px' }}>
+                  <Typography sx={{ paddingLeft: "10px" }}>
+                    Product Name
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: "bold",
+                      fontSize: "1.3rem",
+                      paddingLeft: "10px",
+                    }}
+                  >
                     {data.bname}
                   </Typography>
                 </Box>

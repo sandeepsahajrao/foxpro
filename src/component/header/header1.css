@@ -1,0 +1,13 @@
+.header1icon button:hover .MuiSvgIcon-root {
+    color: orange;
+    cursor: pointer;
+  }
+  
+  .header1email:hover {
+    color: white;
+  }
+  
+  .header1email:hover svg {
+    fill: orange;
+  }
+  

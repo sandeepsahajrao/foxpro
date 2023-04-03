@@ -10,25 +10,25 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import logo from "../image/logo.png";
 import { useState } from "react";
-import './header2.css'
+import "./header2.css";
 
 export const Header2 = () => {
   const theme = useTheme();
   const matches = useMediaQuery("(min-width:599px)");
   const matches1 = useMediaQuery(theme.breakpoints.down("sm"));
   const topPadding = matches ? "63px" : "126px";
-  const  [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Box   sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }}>
       <AppBar
-      //  className="header2Menuname"
+        //  className="header2Menuname"
         position='fixed'
         sx={{ top: topPadding, background: "white", color: "black" }}
       >
         <Toolbar>
           <Box
-             className={menuOpen ? 'header2MenunameMobileR' : 'header2Menuname'}
+            className={menuOpen ? "header2MenunameMobileR" : "header2Menuname"}
             sx={{
               margin: "0px",
               [theme.breakpoints.up("sm")]: {
@@ -49,7 +49,6 @@ export const Header2 = () => {
               justifyContent: "space-between",
               width: "100%",
             }}
-          
           >
             <Box sx={{ flexGrow: 1 }}>
               <img
@@ -59,21 +58,26 @@ export const Header2 = () => {
               />
             </Box>
 
-            <Box  className={menuOpen ? 'header2MenunameMobileR' : 'header2Menuname'} sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <Box
+              className={
+                menuOpen ? "header2MenunameMobileR" : "header2Menuname"
+              }
+              sx={{ display: "flex", alignItems: "center", gap: "10px" }}
+            >
               <Button
                 color='inherit'
                 sx={{
-                    padding: "5px 15px",
-                    borderRadius:'30px',
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "white",
-                    },
-                    "&.active": {
-                      backgroundColor: theme.palette.primary.main,
-                      color: "white",
-                    },
-                  }}
+                  padding: "5px 15px",
+                  borderRadius: "30px",
+                  "&:hover": {
+                    backgroundColor: "black",
+                    color: "white",
+                  },
+                  "&.active": {
+                    backgroundColor: theme.palette.primary.main,
+                    color: "white",
+                  },
+                }}
               >
                 Home
               </Button>
@@ -81,7 +85,7 @@ export const Header2 = () => {
                 color='inherit'
                 sx={{
                   padding: "5px 10px",
-                  borderRadius:'30px',
+                  borderRadius: "30px",
                   "&:hover": {
                     backgroundColor: "black",
                     color: "white",
@@ -98,7 +102,7 @@ export const Header2 = () => {
                 color='inherit'
                 sx={{
                   padding: "5px 10px",
-                  borderRadius:'30px',
+                  borderRadius: "30px",
                   "&:hover": {
                     backgroundColor: "black",
                     color: "white",
@@ -114,17 +118,17 @@ export const Header2 = () => {
               <Button
                 color='inherit'
                 sx={{
-                    padding: "5px 10px",
-                    borderRadius:'30px',
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "white",
-                    },
-                    "&.active": {
-                      backgroundColor: theme.palette.primary.main,
-                      color: "white",
-                    },
-                  }}
+                  padding: "5px 10px",
+                  borderRadius: "30px",
+                  "&:hover": {
+                    backgroundColor: "black",
+                    color: "white",
+                  },
+                  "&.active": {
+                    backgroundColor: theme.palette.primary.main,
+                    color: "white",
+                  },
+                }}
               >
                 Brochure
               </Button>
@@ -132,7 +136,7 @@ export const Header2 = () => {
                 color='inherit'
                 sx={{
                   padding: "5px 10px",
-                  borderRadius:'30px',
+                  borderRadius: "30px",
                   "&:hover": {
                     backgroundColor: "black",
                     color: "white",
@@ -145,33 +149,21 @@ export const Header2 = () => {
               >
                 Contact US
               </Button>
-          </Box>
             </Box>
-              <IconButton
-                  size='large'
-                  edge='start'
-                  color='inherit'
-                  aria-label='menu'
-                  sx={{ mr: 2 }}
-                  className={menuOpen ? 'header2menuIcon2' : 'header2menuIcon'}
-                 onClick={()=>setMenuOpen(!menuOpen)}
-                >
-                  <MenuIcon  />
-                </IconButton>
+          </Box>
+          <IconButton
+            size='large'
+            edge='start'
+            color='inherit'
+            aria-label='menu'
+            sx={{ mr: 2 }}
+            className={menuOpen ? "header2menuIcon2" : "header2menuIcon"}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <MenuIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </Box>
   );
 };
-
-{
-  /* <IconButton
-size="large"
-edge="start"
-color="inherit"
-aria-label="menu"
-sx={{ ml: 2 }}
->
-<MenuIcon />
-</IconButton> */
-}

@@ -19,10 +19,19 @@ import {
 
 export const Footer1 = () => {
   return (
-    <Grid className="footerGrid" container spacing={2} sx={{ background: "#231f20" }}>
+    <Grid
+      className='footerGrid'
+      container
+      spacing={2}
+      sx={{ background: "#231f20" }}
+    >
       <Grid item xs={12} sm={6} md={3}>
         <Box sx={{ bgcolor: "#231f20", color: "gray", p: 2 }}>
-          <img src={Logo} alt='Logo' style={{ background:'none',marginBottom:"20px"}} />
+          <img
+            src={Logo}
+            alt='Logo'
+            style={{ background: "none", marginBottom: "20px" }}
+          />
           <Typography variant='body1'>
             We are one of the prominent name in Electronics Business working
             since early 80's with the name OSWAL &amp; OSPRO. We launched our
@@ -35,37 +44,37 @@ export const Footer1 = () => {
       <Grid item xs={12} sm={6} md={3}>
         <Box sx={{ bgcolor: "#231f20", color: "gray", p: 2 }}>
           <List>
-            <ListItem className="UsefullLinkitem12">
+            <ListItem className='UsefullLinkitem12'>
               <ListItemText
                 primary='Useful Links'
                 sx={{ textTransform: "uppercase", color: "white" }}
               />
             </ListItem>
-            <ListItem className="UsefullLinkitem1">
+            <ListItem className='UsefullLinkitem1'>
               <ListItemText
                 primary='Home'
                 sx={{ textTransform: "uppercase" }}
               />
             </ListItem>
-            <ListItem className="UsefullLinkitem1">
+            <ListItem className='UsefullLinkitem1'>
               <ListItemText
                 primary='About Us'
                 sx={{ textTransform: "uppercase" }}
               />
             </ListItem>
-            <ListItem className="UsefullLinkitem1">
+            <ListItem className='UsefullLinkitem1'>
               <ListItemText
                 primary='Products'
                 sx={{ textTransform: "uppercase" }}
               />
             </ListItem>
-            <ListItem className="UsefullLinkitem1">
+            <ListItem className='UsefullLinkitem1'>
               <ListItemText
                 primary='Brochure'
                 sx={{ textTransform: "uppercase" }}
               />
             </ListItem>
-            <ListItem className="UsefullLinkitem1">
+            <ListItem className='UsefullLinkitem1'>
               <ListItemText
                 primary='Contact us'
                 sx={{ textTransform: "uppercase" }}
@@ -85,19 +94,19 @@ export const Footer1 = () => {
               />
             </ListItem>
 
-            <ListItem className="sociallinkitem1">
+            <ListItem className='sociallinkitem1'>
               <Facebook />
               <ListItemText sx={{ marginLeft: "25px" }} primary='Facebook' />
             </ListItem>
-            <ListItem className="sociallinkitem1">
+            <ListItem className='sociallinkitem1'>
               <Twitter />
               <ListItemText sx={{ marginLeft: "25px" }} primary='Twitter' />
             </ListItem>
-            <ListItem className="sociallinkitem1">
+            <ListItem className='sociallinkitem1'>
               <Instagram />
               <ListItemText sx={{ marginLeft: "25px" }} primary='Instagram' />
             </ListItem>
-            <ListItem className="sociallinkitem1">
+            <ListItem className='sociallinkitem1'>
               <WhatsApp />
               <ListItemText sx={{ marginLeft: "25px" }} primary='WhatsApp' />
             </ListItem>
@@ -108,31 +117,31 @@ export const Footer1 = () => {
       <Grid item xs={12} sm={6} md={3}>
         <Box sx={{ bgcolor: "#231f20", color: "gray", p: 2 }}>
           <List>
-            <ListItem >
+            <ListItem>
               <ListItemText
                 sx={{ marginLeft: "10px", color: "white" }}
                 primary='OUR LOCTION'
               />
             </ListItem>
-            <ListItem className="OurLocationitem1">
+            <ListItem className='OurLocationitem1'>
               <ListItemIcon>
                 <LocationOnIcon sx={{ color: "orange", p: 2 }} />
               </ListItemIcon>
               <ListItemText primary='New Delhi India' />
             </ListItem>
-            <ListItem className="OurLocationitem1">
+            <ListItem className='OurLocationitem1'>
               <ListItemIcon>
                 <PhoneIcon sx={{ color: "orange", p: 2 }} />
               </ListItemIcon>
               <ListItemText primary='+91-9891682867' />
             </ListItem>
-            <ListItem className="OurLocationitem1">
+            <ListItem className='OurLocationitem1'>
               <ListItemIcon>
                 <EmailIcon sx={{ color: "orange", p: 2 }} />
               </ListItemIcon>
               <ListItemText primary='oswalelectronic@gmail.com' />
             </ListItem>
-            <ListItem className="OurLocationitem1">
+            <ListItem className='OurLocationitem1'>
               <ListItemIcon>
                 <LanguageIcon sx={{ color: "orange", p: 2 }} />
               </ListItemIcon>

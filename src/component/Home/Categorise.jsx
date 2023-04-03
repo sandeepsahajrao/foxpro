@@ -43,14 +43,19 @@ export const Categorise = () => {
           >
             <Box
               className='boxtitle2'
-              sx={{ color: "black", fontSize: "1rem", fontWeight: "600",marginBottom:'10px' }}
+              sx={{
+                color: "black",
+                fontSize: "1rem",
+                fontWeight: "600",
+                marginBottom: "10px",
+              }}
             >
               SEE OUR TOP CATEGORIES
             </Box>
             <Box
               className='boxtitle2'
               component='span'
-              sx={{  fontSize: "2rem", fontWeight: "700" }}
+              sx={{ fontSize: "2rem", fontWeight: "700" }}
             >
               PRODUCT&nbsp;
             </Box>

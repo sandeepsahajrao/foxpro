@@ -36,7 +36,6 @@ const MainC = () => {
         <Testmessages></Testmessages>
         <Footer1></Footer1>
         <Lastfootes></Lastfootes>
-       
       </Box>
     </>
   );

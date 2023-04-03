@@ -57,19 +57,28 @@ export const Testmessages = () => {
 
   return (
     <Box>
-      <Box sx={{textAlign:'center',marginTop:"50px"}}>
-        <Box component='span' sx={{ textAlign: "center",fontSize:'2rem',fontWeight:'700'}}>
+      <Box sx={{ textAlign: "center", marginTop: "50px" }}>
+        <Box
+          component='span'
+          sx={{ textAlign: "center", fontSize: "2rem", fontWeight: "700" }}
+        >
           OUR &nbsp;
         </Box>
-        <Box  component='span' sx={{ textAlign: "center",fontSize:'2rem',fontWeight:'700',color:'orange' }}>
+        <Box
+          component='span'
+          sx={{
+            textAlign: "center",
+            fontSize: "2rem",
+            fontWeight: "700",
+            color: "orange",
+          }}
+        >
           TESTIMONIALS
         </Box>
-        <Box sx={{display:'flex',justifyContent:'center'}}>
-
-        <Box className="horizontal-line"></Box>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box className='horizontal-line'></Box>
         </Box>
       </Box>
-
 
       <Carousel
         swipeable={false}

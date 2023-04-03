@@ -53,14 +53,13 @@ export const Speciality = () => {
               SPECIALITIES
             </Box>
           </Box>
-  
+
           <Typography className='spcepara'>
-          
-              Below mentioned USP's makes us stand apart from the competition.
-              We always ensure best possible quality of
+            Below mentioned USP's makes us stand apart from the competition. We
+            always ensure best possible quality of
           </Typography>
           <Typography className='spcepara'>
-          our products to make your experince unforgetable.
+            our products to make your experince unforgetable.
           </Typography>
         </Box>
         <Box

@@ -13,7 +13,7 @@ import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import PersonIcon from "@mui/icons-material/Person";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import EditOffIcon from "@mui/icons-material/EditOff";
-import "./gridbox.css"
+import "./gridbox.css";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -67,18 +67,39 @@ export default function Gridbox() {
       <Grid
         container
         spacing={{ xs: 3, md: 4 }}
-        columns={{ xs: 1, sm: 6, md: 12}}
+        columns={{ xs: 1, sm: 6, md: 12 }}
         rows={{ xs: 3, md: 1 }}
-
       >
         {gridData.map((item, index) => (
-          <Grid className="cardgirdMain" xs={12} sm={6} md={6}  key={index} sx={{padding:"20px"}}>
-            <Card className="cardgird" sx={{ minWidth: "300px",lineHeight:"40px"}}>
+          <Grid
+            className='cardgirdMain'
+            xs={12}
+            sm={6}
+            md={6}
+            key={index}
+            sx={{ padding: "20px" }}
+          >
+            <Card
+              className='cardgird'
+              sx={{ minWidth: "300px", lineHeight: "40px" }}
+            >
               <CardContent>
                 <Box sx={{ display: "flex", gap: "20px" }}>
-                  <Box className='boxicon' sx={{color:'orange',fontWeight:700}}>{item.icon}</Box>
+                  <Box
+                    className='boxicon'
+                    sx={{ color: "orange", fontWeight: 700 }}
+                  >
+                    {item.icon}
+                  </Box>
                   <Box>
-                    <Typography sx={{ fontSize: 17,fontWeight:'bold',marginBottom:'5px' }} color='black'>
+                    <Typography
+                      sx={{
+                        fontSize: 17,
+                        fontWeight: "bold",
+                        marginBottom: "5px",
+                      }}
+                      color='black'
+                    >
                       {item.message}
                     </Typography>
                     <Box component='span'>{item.description}</Box>
