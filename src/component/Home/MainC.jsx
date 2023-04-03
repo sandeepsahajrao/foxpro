@@ -4,7 +4,11 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 import Banner2 from "./Banner2";
 import { Speciality } from "./Speciality";
 import { Categorise } from "./Categorise";
-
+import { SecondProductcor } from "./SecondProductcor";
+import { Reviews } from "./Reviews";
+import { Testmessages } from "./Testmessages";
+import { Footer1 } from "./Footer1";
+import Lastfootes from "./Lastfootes";
 const MainC = () => {
   const theme = useTheme();
   const isSmScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -27,6 +31,12 @@ const MainC = () => {
         <Banner2></Banner2>
         <Speciality></Speciality>
         <Categorise></Categorise>
+        <SecondProductcor></SecondProductcor>
+        <Reviews></Reviews>
+        <Testmessages></Testmessages>
+        <Footer1></Footer1>
+        <Lastfootes></Lastfootes>
+       
       </Box>
     </>
   );

@@ -1,0 +1,17 @@
+@media (max-width: 501px) {
+    .Reviewpara1{
+        font-size: 1.3rem !important;
+    }
+    .Reviewpara2{
+        font-size: 1rem !important;
+    }
+    .Reviewpara3{
+        font-size: 0.9rem !important;
+    }
+    .reviewBox{
+        padding: 30px !important;
+    }
+    .reviewBox{
+        padding: 50px !important;
+    }
+}

@@ -63,6 +63,7 @@ export const GridBoxCate = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
+        item
         container
         spacing={{ xs: 3, md: 4 }}
         columns={{ xs: 1, sm: 6, md: 12 }}
@@ -71,10 +72,11 @@ export const GridBoxCate = () => {
       >
         {gridData.map((item, index) => (
           <Grid
-            className="cardgirdMain1"
-            xs={12}
-            sm={6}
-            md={4}
+          className="cardgirdMain1"
+          xs={12}
+          sm={6}
+          item
+          md={4}
             key={index}
             sx={{ padding: "20px" }}
           >

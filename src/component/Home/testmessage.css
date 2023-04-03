@@ -1,0 +1,42 @@
+.TestIcon1 svg{
+    font-size: 60px !important;
+    color:rgb(0, 0, 0);
+  }
+
+
+  .horizontal-line {
+    position: relative;
+    width: 100px;
+    height: 0;
+    left: -30px !important;
+
+  
+
+  }
+  
+  .horizontal-line::before,
+  .horizontal-line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    top: -100px;  
+    height: 1px;
+    background-color: orange;
+
+  }
+  
+  .horizontal-line::before {
+    top: 30px;
+    width: 50px;
+    
+   
+  }
+  
+  .horizontal-line::after {
+    top: 20px;
+    width: 100px;
+    left: 25px;
+
+  }
